@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>license selection</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="license">
+			<form class="license__form" method="POST">
+				<div class="license__items">
+					<div class="license__input-wrap">
+						<div>
+							<input class="license__input" name="license" id="license-1" type="radio" value="13">
+							<label for="license-1" class="license__plan">license plan #1</label>
+						</div>
+						<span class="license__price">$13 per license</span>
+					</div>
+					<div class="license__input-wrap">
+						<div>
+							<input class="license__input" name="license" id="license-2" type="radio" value="22">
+							<label for="license-2" class="license__plan">license plan #2</label>
+						</div>
+						<span class="license__price">$22 per license</span>
+					</div>
+					<div class="license__input-wrap">
+						<div>
+							<input class="license__input" name="license" id="license-3" type="radio" value="34" checked>
+							<label for="license-3" class="license__plan">license plan #3</label>
+						</div>
+						<span class="license__price">$34 per license</span">
+					</div>
+				</div>
+				<div class="license__number">
+					<label for="license-number" class="license__text">Number of licenses:</label>
+					<select name="liceense-number" id="license-number">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10" selected>10</option>
+					</select>
+				</div>
+				<div class="license__total">
+					total: <span class="license__total_blue">$<span>340</span><sup>us</sup></span>
+				</div>
+				<button class="license__button">buy now</button>
+				<div class="license__selected">Selected plan: #<span>3</span></div>
+			</form>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
